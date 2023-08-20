@@ -1,6 +1,8 @@
+# Containers
+container.cid
+
 # IDEs
 .idea
 
-# caching
-.cache/**
-!.cache/.gitkeep
+# QA reports
+*-report.*
