@@ -5,4 +5,4 @@ container.cid
 .idea
 
 # QA reports
-*-report.*
+golangci-lint.report.json
