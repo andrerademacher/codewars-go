@@ -15,6 +15,7 @@ docker run \
     --tty \
     --user "$(id -u)":"$(id -g)" \
     --volume "${PWD}":/codewars/go120 \
+    --volume "gobuildcache":/home/codewars/.cache/go-build \
     --volume "gopkgcache":/home/codewars/go/pkg \
     andrerademacher/codewars-go120 "$@"
 

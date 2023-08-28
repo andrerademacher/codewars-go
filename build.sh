@@ -13,8 +13,8 @@ set -o xtrace   # log all actions and variables
 # fetch dependencies in case of removal
 go mod download -x
 
-# run qa analysis
-golangci-lint run
-
 # run test suite
 go test ./...
+
+# run qa analysis
+golangci-lint run
