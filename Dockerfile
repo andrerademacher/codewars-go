@@ -1,10 +1,8 @@
 FROM golang:1.20-bookworm
 LABEL maintainer="andre.rademacher.business@googlemail.com"
 
-ARG GID_LINUX=1000
-ARG GID_MACOS=501
-ARG UID_LINUX=1000
-ARG UID_MACOS=20
+ARG GID=1000
+ARG UID=1000
 ARG UNAME=codewars
 
 ARG GOCACHE="/home/${UNAME}/.cache/go-build"
@@ -15,16 +13,16 @@ ENV PATH="${PATH}:${GOPATH}/bin"
 
 # setup user and home directory
 RUN groupadd \
-    --gid ${GID_MACOS} \
+    --gid ${GID} \
     --non-unique \
     ${UNAME}
 
 RUN useradd \
     --create-home \
-    --gid ${GID_MACOS} \
+    --gid ${GID} \
     --home-dir /home/codewars \
     --shell /bin/bash \
-    --uid ${UID_MACOS} \
+    --uid ${UID} \
     ${UNAME}
 
 USER ${UNAME}

@@ -3,7 +3,7 @@
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")"
 cd "${SCRIPT_DIRECTORY}" || exit
 
-cd ../.. \
+cd .. \
 && docker build \
   --no-cache \
   --pull \
