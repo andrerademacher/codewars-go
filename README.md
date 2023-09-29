@@ -6,7 +6,7 @@ Use the build script in order to build the custom Golang 1.20 Docker image
 `andrerademacher/codewars-go120`.
 
 ```bash
-container/build.sh
+build.sh
 ```
 
 ## Run command in container
