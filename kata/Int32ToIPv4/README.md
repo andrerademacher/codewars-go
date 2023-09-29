@@ -22,3 +22,5 @@ Complete the function that takes an unsigned 32-bit number and returns a string 
 32         ==> "0.0.0.32"
 0          ==> "0.0.0.0"
 ```
+
+[See this kata in Codewars](https://www.codewars.com/kata/52e88b39ffb6ac53a400022e)
