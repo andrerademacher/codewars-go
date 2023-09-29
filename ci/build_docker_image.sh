@@ -5,7 +5,6 @@ cd "${SCRIPT_DIRECTORY}" || exit
 
 cd .. \
 && docker build \
-  --file container/Dockerfile \
   --no-cache \
   --pull \
   --tag "andrerademacher/codewars-go120" \
